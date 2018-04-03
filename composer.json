@@ -1,0 +1,22 @@
+{
+    "name": "chabibnr/yii2-midtrans",
+    "description": "Midtrans payment",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","midtrands"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chabib Nurozak",
+            "email": "chabibdev@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "chabibnr/yii2-sweetalert" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "chabibnr\\midtrans\\": ""
+        }
+    }
+}
