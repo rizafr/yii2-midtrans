@@ -12,7 +12,8 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "chabibnr/yii2-sweetalert" : "*"
+        "chabibnr/yii2-sweetalert" : "*",
+        "yiisoft/yii2-httpclient": "~2.0.0"
     },
     "autoload": {
         "psr-4": {
