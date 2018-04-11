@@ -2,8 +2,9 @@
 
 namespace chabibnr\midtrans\widgets;
 
-use chabibnr\midtrans\assets\SwalAsset;
 use chabibnr\midtrans\components\Midtrans;
+use chabibnr\sweetalert\assets\SweetAlertAsset;
+use chabibnr\sweetalert\widgets\SweetAlert;
 use Yii;
 use yii\base\Widget;
 use yii\helpers\Html;
@@ -22,7 +23,7 @@ class SnapButton extends Widget {
         $midtrans = Yii::$app->midtrans;
 
         $view = Yii::$app->getView();
-        SwalAsset::register($view);
+        SweetAlertAsset::register($view);
         $view->registerJsFile($midtrans->getBaseUrl(). '/snap/snap.js',[
             'data-client-key' => $midtrans->clientKey
         ]);
